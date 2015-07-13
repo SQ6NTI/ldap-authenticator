@@ -49,7 +49,7 @@ class LdapDriver implements DriverInterface
 
     protected function getDnForUser($username)
     {
-        return 'cn=' . $username . ',' . $this->config['base_dn'];
+        return 'uid=' . $username . ',' . $this->config['base_dn'];
     }
 
     public function __destruct()
